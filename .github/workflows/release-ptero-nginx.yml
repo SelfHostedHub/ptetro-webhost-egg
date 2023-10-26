@@ -28,4 +28,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/SelfHostedHub/nginx-ptero:8.1
+            ghcr.io/selfhostedhub/nginx-ptero:8.1
