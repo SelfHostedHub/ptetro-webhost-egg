@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk --update --no-cache add curl ca-certificates nginx
-RUN apk add php7.2 php7.2-xml php7.2-exif php7.2-fpm php7.2-session php7.2-soap php7.2-openssl php7.2-gmp php7.2-pdo_odbc php7.2-json php7.2-dom php7.2-pdo php7.2-zip php7.2-mysqli php7.2-sqlite3 php7.2-pdo_pgsql php7.2-bcmath php7.2-gd php7.2-odbc php7.2-pdo_mysql php7.2-pdo_sqlite php7.2-gettext php7.2-xmlreader php7.2-bz2 php7.2-iconv php7.2-pdo_dblib php7.2-curl php7.2-ctype php7.2-phar php7.2-fileinfo php7.2-mbstring php7.2-tokenizer php7.2-simplexml
+RUN apk add php7.4 php7.4-xml php7.4-exif php7.4-fpm php7.4-session php7.4-soap php7.4-openssl php7.4-gmp php7.4-pdo_odbc php7.4-json php7.4-dom php7.4-pdo php7.4-zip php7.4-mysqli php7.4-sqlite3 php7.4-pdo_pgsql php7.4-bcmath php7.4-gd php7.4-odbc php7.4-pdo_mysql php7.4-pdo_sqlite php7.4-gettext php7.4-xmlreader php7.4-bz2 php7.4-iconv php7.4-pdo_dblib php7.4-curl php7.4-ctype php7.4-phar php7.4-fileinfo php7.4-mbstring php7.4-tokenizer php7.4-simplexml
 COPY --from=composer:latest  /usr/bin/composer /usr/bin/composer
 
 USER container

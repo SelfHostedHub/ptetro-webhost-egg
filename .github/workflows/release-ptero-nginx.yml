@@ -1,10 +1,10 @@
-name: Nginx 7.2
+name: Nginx 7.4
 on:
   workflow_dispatch:
 
 jobs:
   push:
-    name: "nginx-ptero:7.2"
+    name: "nginx-ptero:7.4"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -27,4 +27,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/SelfHostedHub/nginx-ptero:7.2
+            ghcr.io/SelfHostedHub/nginx-ptero:7.4
