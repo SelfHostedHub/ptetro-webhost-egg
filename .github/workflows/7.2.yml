@@ -1,8 +1,6 @@
 name: Nginx 7.2
 on:
-  push:
-    branches:
-      - "version/php-7.2"
+   workflow_dispatch:
 
 jobs:
   push:
@@ -12,6 +10,8 @@ jobs:
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: version/php-7.2
       - uses: docker/setup-qemu-action@v1
       - uses: docker/setup-buildx-action@v1
         with:
