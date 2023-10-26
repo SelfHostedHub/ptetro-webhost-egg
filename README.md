@@ -1,4 +1,4 @@
-# Pterodactyl webhost egg
+# Pterodactyl PHP Egg
 
 
 
@@ -23,4 +23,4 @@ To remove logs from console, open nginx/conf.d/default.conf and uncomment (remov
 Originally forked and edited from https://gitlab.com/tenten8401/pterodactyl-nginx
 
 
-© Sigma Productions 2023
+© SelfHostedHub 2023
